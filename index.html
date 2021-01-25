@@ -112,7 +112,7 @@
 
         var root = "https://pro-api.coinmarketcap.com/v1";
         var xhr = new XMLHttpRequest();
-        //var key = "0e792116-c459-4521-859f-2bdb1ce63e43"
+        var key = "0e792116-c459-4521-859f-2bdb1ce63e43"
 
         async function check() {
             
@@ -125,7 +125,7 @@
         async function checkOpen() {
 
             xhr.open("GET", root + "/cryptocurrency/info");
-            //xhr.setRequestHeader("Access-Control-Allow-Origin: file:///C:/Users/Pika_Ball_Dude/Downloads/e/index.html", "X-CMC_PRO_API_KEY", key);
+            xhr.setRequestHeader("Access-Control-Allow-Origin: https://covid19dashboard.github.io/cryptocurrency/", "X-CMC_PRO_API_KEY", key);
 
         };
 
